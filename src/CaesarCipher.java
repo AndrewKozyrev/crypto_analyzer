@@ -6,9 +6,9 @@ public class CaesarCipher {
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
             int charPosition = alphabet.indexOf(c);
-            int keyVal = (key + charPosition) % alphabet.length();
-            char replaceVal = alphabet.charAt(keyVal);
-            encryptedText.append(replaceVal);
+            int encryptedIndex = (charPosition + key) % alphabet.length();
+            char encryptedSymbol = alphabet.charAt(encryptedIndex);
+            encryptedText.append(encryptedSymbol);
         }
         return encryptedText.toString();
     }
@@ -26,5 +26,8 @@ public class CaesarCipher {
         return decryptedText.toString();
     }
 
-    public static String hackCipher(String text) {return null;}
+    public static String hackCipher(String text) {
+
+       return null;
+    }
 }
