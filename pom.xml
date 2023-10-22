@@ -17,11 +17,6 @@
     <dependencies>
         <dependency>
             <groupId>org.languagetool</groupId>
-            <artifactId>language-tool-core</artifactId>
-            <version>5.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.languagetool</groupId>
             <artifactId>language-ru</artifactId>
             <version>5.4</version>
         </dependency>
